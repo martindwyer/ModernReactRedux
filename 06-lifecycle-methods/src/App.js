@@ -10,7 +10,17 @@ class App extends Component {
       lat: null,
       errorMessage: "",
     };
+  }
 
+  // Alternative way to initialize state (as opposed to constructor above)
+  // i.e. if all you need is state for your class, don't need constructor
+  // state = {
+  //   lat: null,
+  //   errorMessage: "",
+  // };
+
+  componentDidMount() {
+    console.log("component App rendered to the screen");
     window.navigator.geolocation.getCurrentPosition(
       (position) => {
         this.setState({ lat: position.coords.latitude });
@@ -21,21 +31,26 @@ class App extends Component {
     );
   }
 
+  componentDidUpdate() {
+    console.log("component did update");
+  }
+
+  componentWillUnmount() {
+    console.log("component is unmounting...");
+    setTimeout(console.log("bye"), 3000);
+  }
+
   render() {
     if (this.state.errorMessage && !this.state.lat) {
       return (
         <div>
           <h3>Error: {this.state.errorMessage} </h3>
-
-          <SeasonDisplay />
         </div>
       );
     } else if (!this.state.errorMessage && this.state.lat) {
       return (
         <div>
-          <h3>Latitude: {this.state.lat} </h3>
-
-          <SeasonDisplay />
+          <SeasonDisplay lat={this.state.lat} />
         </div>
       );
     } else {
