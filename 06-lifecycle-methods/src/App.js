@@ -1,5 +1,6 @@
 import { React, Component } from "react";
 import SeasonDisplay from "./SeasonDisplay";
+import Spinner from "./Spinner";
 
 class App extends Component {
   constructor(props) {
@@ -18,6 +19,24 @@ class App extends Component {
   //   lat: null,
   //   errorMessage: "",
   // };
+
+  renderContent() {
+    if (this.state.errorMessage && !this.state.lat) {
+      return (
+        <div>
+          <h3>Error: {this.state.errorMessage} </h3>
+        </div>
+      );
+    } else if (!this.state.errorMessage && this.state.lat) {
+      return (
+        <div>
+          <SeasonDisplay lat={this.state.lat} />
+        </div>
+      );
+    } else {
+      return <Spinner message="Please allow browser location request ..." />;
+    }
+  }
 
   componentDidMount() {
     console.log("component App rendered to the screen");
@@ -41,21 +60,7 @@ class App extends Component {
   }
 
   render() {
-    if (this.state.errorMessage && !this.state.lat) {
-      return (
-        <div>
-          <h3>Error: {this.state.errorMessage} </h3>
-        </div>
-      );
-    } else if (!this.state.errorMessage && this.state.lat) {
-      return (
-        <div>
-          <SeasonDisplay lat={this.state.lat} />
-        </div>
-      );
-    } else {
-      return <div>loading...</div>;
-    }
+    return <div>{this.renderContent()}</div>;
   }
 }
 
