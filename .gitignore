@@ -25,4 +25,4 @@ yarn-error.log*
 /config
 08-making-api-requests/src/config/keys.js
 
-keys.js
+dev.js
