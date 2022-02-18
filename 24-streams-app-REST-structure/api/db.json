@@ -1,0 +1,34 @@
+{
+  "streams": [
+    {
+      "function dispatch() {\n              return !window.__REDUX_DEVTOOLS_EXTENSION_LOCKED__ ": "",
+      " o.dispatch.apply(o, arguments);\n            }": "",
+      "id": 1
+    },
+    {
+      "function dispatch() {\n              return !window.__REDUX_DEVTOOLS_EXTENSION_LOCKED__ ": "",
+      " o.dispatch.apply(o, arguments);\n            }": "",
+      "id": 2
+    },
+    {
+      "function dispatch() {\n              return !window.__REDUX_DEVTOOLS_EXTENSION_LOCKED__ ": "",
+      " o.dispatch.apply(o, arguments);\n            }": "",
+      "id": 3
+    },
+    {
+      "title": "pickles",
+      "description": "a new streaming video with pickles",
+      "id": 4
+    },
+    {
+      "title": "Other stream",
+      "description": "a new streaming video about other stuff",
+      "id": 5
+    },
+    {
+      "title": "pickles",
+      "description": "another pickles vid",
+      "id": 6
+    }
+  ]
+}
