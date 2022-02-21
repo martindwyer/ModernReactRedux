@@ -27,9 +27,21 @@
     },
     {
       "title": "pickles",
-      "description": "A last new video of pickles",
+      "description": "A last new video of pickles ... EDITED",
       "userId": "118433297468222443607",
       "id": 11
+    },
+    {
+      "title": "A new stream",
+      "description": "A video about stream creation",
+      "userId": "118433297468222443607",
+      "id": 12
+    },
+    {
+      "title": "New Stream #2",
+      "description": "A video about what I do on Sunday...",
+      "userId": "118433297468222443607",
+      "id": 13
     }
   ]
 }
