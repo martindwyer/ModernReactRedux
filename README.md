@@ -15,6 +15,8 @@ The course uses a variety of API's in building the apps listed above.
 
 Finally, these are my notes and code. There are a number of places where my code varies from, or exceeds, that which is done in the course. The photo gallery app, for example, includes an expanded fully reflexive photo gallery not included in the lectures. I greatly prefer switch case statements to series of if statements, so my notes often use switch case statements instead of the class code.
 
+The course utilizes Create React App throughout, so I'll leave the following:
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
