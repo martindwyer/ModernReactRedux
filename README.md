@@ -1,3 +1,20 @@
+# Modern React and Redux
+
+This project contains my notes and code for the complete course:
+
+https://www.udemy.com/course/react-redux/
+
+An excellent course which I highly recommend. There are several apps built throughout the course;
+
+Photo Gallery App (lesson 8 to 10)
+Youtube Browser App (lesson 11 to 14)
+Blog App (lesson 16 to 18)
+Streaming Video App (lesson 20 to 26)
+
+The course uses a variety of API's in building the apps listed above.
+
+Finally, these are my notes and code. There are a number of places where my code varies from, or exceeds, that which is done in the course. The photo gallery app, for example, includes an expanded fully reflexive photo gallery not included in the lectures. I greatly prefer switch case statements to series of if statements, so my notes often use switch case statements instead of the class code.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
